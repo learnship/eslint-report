@@ -1,6 +1,6 @@
 {
   "name": "eslint-report",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Run ESLint and post results as a comment on the PR",
   "main": "src/index.js",
   "scripts": {
@@ -22,8 +22,6 @@
     "@actions/github": "^6.0.0",
     "@eslint/js": "^9.17.0",
     "@jest/globals": "^29.7.0",
-    "act": "^0.0.6",
-    "eslint": "^9.17.0",
     "eslint-config-recommended": "^4.1.0",
     "eslint-plugin-jest": "^28.10.0",
     "globals": "^15.14.0",
@@ -33,6 +31,7 @@
     "child_process": "^1.0.2",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
-    "process": "^0.11.10"
+    "process": "^0.11.10",
+    "eslint": "^9.17.0"
   }
 }
