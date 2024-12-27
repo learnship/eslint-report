@@ -1,11 +1,13 @@
 {
   "name": "eslint-report",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Run ESLint and post results as a comment on the PR",
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint ."
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
