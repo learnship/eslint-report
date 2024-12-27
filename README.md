@@ -26,3 +26,4 @@ jobs:
         uses: learnship/eslint-report@v1.0.4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+```
