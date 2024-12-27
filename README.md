@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run ESLint and Comment on PR
-        uses: learnship/eslint-report@v1.0.4
+        uses: learnship/eslint-report@v1.0.5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 ```

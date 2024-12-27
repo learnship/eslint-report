@@ -5,13 +5,10 @@ const globals = require('globals');
 
 module.exports = [
   {
-    // 1. Telling ESLint which files/folders to ignore:
-    ignores: ['dist', 'node_modules'],
-
-    // 2. Pull in the recommended config (merging languageOptions & rules).
+    // 1. Pull in the recommended config (merging languageOptions & rules).
     ...js.configs.recommended,
 
-    // 3. Language options for Node and Jest:
+    // 2. Language options for Node and Jest:
     languageOptions: {
       ...js.configs.recommended.languageOptions,
       ecmaVersion: 'latest',
@@ -22,7 +19,7 @@ module.exports = [
       },
     },
 
-    // 4. Jest plugin setup:
+    // 3. Jest plugin setup:
     plugins: {
       jest: jestPlugin,
     },
