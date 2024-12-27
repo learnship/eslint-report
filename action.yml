@@ -1,0 +1,9 @@
+name: 'Lint and Comment on PR'
+description: 'Run ESLint and post results as a comment on the PR'
+inputs:
+  github-token:
+    description: 'GitHub token'
+    required: true
+runs:
+  using: 'node12'
+  main: 'src/index.js'
