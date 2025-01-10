@@ -42,7 +42,13 @@ class LintReport {
   }
 
   generateLintReport() {
-    execSync('npx eslint . -f json -o lint-report.json');
+    try {
+      const output = execSync('npx eslint . -f json -o lint-report.json');
+      console.log('ESLint output:', output);
+    } catch (error) {
+      console.error('ESLint error:', error.stdout || error.stderr);
+      throw error;
+    }
     return JSON.parse(fs.readFileSync('./lint-report.json', 'utf-8'));
   }
 

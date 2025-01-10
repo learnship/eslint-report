@@ -1,6 +1,9 @@
 # ESLint Report Action
 
+> **Note:** This repository is currently a work in progress and is not functional. Please do not use it yet.
+
 This GitHub Action runs ESLint on your codebase and posts the results as a comment on the pull request.
+
 
 ## Features
 

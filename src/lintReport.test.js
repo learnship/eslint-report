@@ -62,7 +62,6 @@ describe('LintReport', () => {
   describe('generateLintReport', () => {
     it('should generate lint report', () => {
       const lintReportData = [{ filePath: 'file.js', messages: [] }];
-      execSync.mockReturnValueOnce();
       fs.readFileSync.mockReturnValueOnce(JSON.stringify(lintReportData));
 
       const report = lintReport.generateLintReport();
